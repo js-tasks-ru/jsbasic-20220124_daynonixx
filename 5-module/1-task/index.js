@@ -1,3 +1,7 @@
 function hideSelf() {
-  // ваш код...
+  document.addEventListener('click', e => {
+    if (e.target.closest('.hide-self-button')) {
+      e.target.hidden = true;
+    }
+  });
 }
